@@ -1,25 +1,20 @@
 
 RUNNING THE PROJECT
 
-1. Place your trained files in this folder:
-   lr_model.pkl
-   rf_model.pkl
-   vectorizer.pkl
-
-2. Install Python packages
+1. Install Python packages using vs code terminal
 pip install -r requirements.txt
 
-3. Start ML API
+2. Start ML API
 py -m uvicorn main:app --reload
 
-4. Install Node packages
+3. Install Node packages in project folder
 npm install
 
-5. Start backend
+4. Start backend using separate window
 node node_server.js
 
-6. Open frontend
+5. Open frontend
 Open frontend/index.html in browser
 
 FLOW:
-Frontend -> Node Backend -> FastAPI -> ML Models
+Input -> Frontend -> Node Backend -> FastAPI -> ML Models -> Node Backend -> Frontend -> Output
